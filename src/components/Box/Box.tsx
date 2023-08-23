@@ -31,7 +31,7 @@ export const Box = memo(({ id }: IBoxProps): ReactElement => {
         return () => {
             clearInterval(interval);
         }
-    }, []);
+    }, [dispatch, id]);
 
     return <StyledBoxContainer>
         <StyledLabel>ID: {id}</StyledLabel>
